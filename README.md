@@ -1,5 +1,1 @@
-# DSA
-
-DSA via C++ – Daily problem-solving and logic building.
-git add //filename
-git add .
+Back to build my logic, got too used to no code and Ai's. Lmao

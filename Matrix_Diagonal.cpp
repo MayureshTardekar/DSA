@@ -29,20 +29,29 @@ int main()
     }
 
     // Main diagonal
-    cout << "Main diagonal: ";
+    cout << "Main diagonal:\n";
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i][i] << " ";
+        // print i tabs/spaces for indentation
+        for (int space = 0; space < i; space++)
+        {
+            cout << "   "; // 3 spaces per level of indent
+        }
+        cout << arr[i][i] << endl;
     }
+
     cout << endl;
 
     // Secondary diagonal
-    cout << "Secondary diagonal: ";
+    cout << "Secondary diagonal:\n";
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i][n - i - 1] << " ";
+        for (int space = 0; space < n - i - 1; space++)
+        {
+            cout << "   "; // 3 spaces per level
+        }
+        cout << arr[i][n - i - 1] << endl;
     }
-    cout << endl;
 
     return 0;
 }
